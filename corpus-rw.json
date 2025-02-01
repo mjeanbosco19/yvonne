@@ -6,7 +6,7 @@
       "intent": "greetings.hello",
       "utterances": ["mwaramutse", "muraho", "bite", "yego"],
       "answers": [
-        "Murakaza neza kuri IremboGov! Mushobora kubaza ikibazo cyose kijyanye na serivisi za Leta."
+        "Murakaza neza! Nitwa KINYARWANDA AI HELPDESK CHATBOT.   Mushobora kubaza ikibazo cyose kijyanye na serivisi za Letaz ziri ku rubuga rwa IremboGov. "
       ]
     },
     {
