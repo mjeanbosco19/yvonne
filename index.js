@@ -11,6 +11,8 @@ Hamagara itsinda ryacu ritanga ubufasha:
 Andikira itsinda ryacu ritanga ubufasha:
 support@irembo.com`;
 
+const PORT = process.env.PORT || 3000;
+
 (async () => {
   const dock = await dockStart();
   const nlp = dock.get('nlp');
@@ -28,11 +30,19 @@ support@irembo.com`;
   const apiServer = dock.get('api-server');
   const app = apiServer.app;
 
+  // Add security headers
+  app.use((req, res, next) => {
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'DENY');
+    res.setHeader('X-XSS-Protection', '1; mode=block');
+    next();
+  });
+
   // Serve static files from public directory
   app.use(express.static(path.join(__dirname, 'public')));
 
-  // Parse JSON bodies
-  app.use(express.json());
+  // Parse JSON bodies with size limit
+  app.use(express.json({ limit: '1mb' }));
 
   // Handle chat messages
   app.post('/api/messages', async (req, res) => {
@@ -52,5 +62,5 @@ support@irembo.com`;
     }
   });
 
-  console.log('Server started on port 3000');
+  console.log(`Server started on port ${PORT}`);
 })();

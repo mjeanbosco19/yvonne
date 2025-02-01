@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "DESIGN AND IMPLEMENTATION OF  KINYARWANDA AI HELPDESK CHATBOT",
   "main": "index.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
