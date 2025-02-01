@@ -1,23 +1,214 @@
 {
-  "name": "Kinyarwanda Corpus",
+  "name": "IremboGov Helpdesk Corpus",
   "locale": "rw-RW",
   "data": [
     {
       "intent": "greetings.hello",
       "utterances": ["mwaramutse", "muraho", "bite", "yego"],
-      "answers": ["Muraho! Murakaza neza!", "Mwaramutse! Murakaza neza!"]
-    },
-    {
-      "intent": "greetings.howareyou",
-      "utterances": ["amakuru", "umeze ute", "bite sha"],
-      "answers": ["Ni meza, murakoze!", "Meze neza, murakoze!"]
-    },
-    {
-      "intent": "greetings.bye",
-      "utterances": ["murabeho", "nagasaga", "muramuke"],
       "answers": [
-        "Murabeho, mugarare amahoro!",
-        "Nagasaga, Imana ibahe umugisha!"
+        "Murakaza neza kuri IremboGov! Mushobora kubaza ikibazo cyose kijyanye na serivisi za Leta."
+      ]
+    },
+    {
+      "intent": "irembo.general",
+      "utterances": [
+        "irembo ni iki",
+        "irembo ikora iki",
+        "ni izihe serivisi ziboneka kuri irembo"
+      ],
+      "answers": [
+        "IremboGov ni urubuga rutanga serivisi za Leta mu buryo bw'ikoranabuhanga. Ruborohereza gusaba no kwishyura serivisi zitandukanye za Leta."
+      ]
+    },
+    {
+      "intent": "service.identity",
+      "utterances": [
+        "ndashaka gusaba indangamuntu",
+        "nagize ikibazo ku ndangamuntu",
+        "nkora nte kugirango mbone indangamuntu",
+        "gusaba indangamuntu bisaba iki"
+      ],
+      "answers": [
+        "Kugira ngo usabe indangamuntu, ukeneye: 1) Kuba ufite imyaka 16 cyangwa irenga 2) Icyemezo cy'amavuko 3) Kuzuza ifishi yo gusaba. Ushobora gusaba ukoresheje urubuga rwa www.irembo.gov.rw cyangwa ugasura ibiro by'Umurenge."
+      ]
+    },
+    {
+      "intent": "service.passport",
+      "utterances": [
+        "ndashaka gusaba pasiporo",
+        "pasiporo isaba iki",
+        "pasiporo irahenda",
+        "pasiporo imara igihe kingana iki"
+      ],
+      "answers": [
+        "Gusaba pasiporo bikorwa kuri www.irembo.gov.rw. Ukeneye: 1) Indangamuntu 2) Ifoto yawe 3) Kwishyura amafaranga ya pasiporo. Pasiporo isanzwe imara imyaka 5, naho iy'umwana imara imyaka 2."
+      ]
+    },
+    {
+      "intent": "payment.methods",
+      "utterances": [
+        "nishyura nte",
+        "mushyura hate",
+        "ni ubuhe buryo bwo kwishyura",
+        "ese mushyura na momo"
+      ],
+      "answers": [
+        "Ushobora kwishyura ukoresheje: 1) Mobile Money (MTN, Airtel) 2) Ikarita ya banki 3) Kwishyurira kuri banki 4) Agent wa Irembo."
+      ]
+    },
+    {
+      "intent": "service.marriage",
+      "utterances": [
+        "ndashaka gusaba icyemezo cyo gushyingirwa",
+        "gushyingirwa bisaba iki",
+        "nkora nte kugira ngo mbone icyemezo cyo gushyingirwa"
+      ],
+      "answers": [
+        "Kugira ngo usabe icyemezo cyo gushyingirwa ukeneye: 1) Indangamuntu zawe n'uwo mugiye gushyingirwa 2) Icyemezo cy'amavuko 3) Icyemezo cy'uko uri ingaragu. Ushobora gusaba binyuze kuri www.irembo.gov.rw"
+      ]
+    },
+    {
+      "intent": "technical.issues",
+      "utterances": [
+        "urubuga ntirukora",
+        "mfite ikibazo cya tekiniki",
+        "sisteme ntikora",
+        "nabura ikibazo"
+      ],
+      "answers": [
+        "Murakora mwongere mugerageze. Niba ikibazo gikomeje, mushobora guhamagara umurongo wacu utishyurwa 9099 cyangwa mutubandikire kuri support@irembo.rw"
+      ]
+    },
+    {
+      "intent": "irembo.announcement",
+      "utterances": [
+        "hari ibishya ku irembo",
+        "ni ibihe bivugururwa ku irembo",
+        "irembo yavuguruwe",
+        "ni izihe mpinduka ku irembo"
+      ],
+      "answers": [
+        "Turi kuvugurura urubuga IremboGov mu ishusho nshya dushingiye ku bitekerezo mwaduhaye. Tubafitiye ibindi bishya bigamije kuborohereza gusaba serivisi za leta!"
+      ]
+    },
+    {
+      "intent": "service.family",
+      "utterances": [
+        "serivisi z'umuryango",
+        "ndashaka icyemezo cy'uko uri ingaragu",
+        "icyemezo cy'ingaragu gisaba iki",
+        "icyemezo cy'ingaragu kirahenda"
+      ],
+      "answers": [
+        "Icyemezo cy'uko uri ingaragu gitangwa n'ubuyobozi, kigaragaza ko uri ingaragu. Gisaba 500 RWF, kimara umunsi 1 gutunganywa. Gifite agaciro k'amezi 3. Gishobora gukoreshwa mu gushaka, gusaba inguzanyo muri banki cyangwa ubwishingizi."
+      ]
+    },
+    {
+      "intent": "service.divorce",
+      "utterances": [
+        "serivisi z'ubutane",
+        "ndashaka inyandiko y'ubutane",
+        "ubutane busaba iki",
+        "nkora nte kugira ngo mbone icyemezo cy'ubutane"
+      ],
+      "answers": [
+        "Inyandiko y'Ubutane ihabwa abanyarwanda bamaze gusesa amasezerano yo gushyingirwa. Isaba 1,500 RWF, imara umunsi 1 gutunganywa. Ukeneye kugaragaza icyemezo cy'urukiko cyemeza ubutane."
+      ]
+    },
+    {
+      "intent": "service.orphan",
+      "utterances": [
+        "kwemeza ko umuntu ari imfubyi",
+        "icyemezo cy'ubupfubyi",
+        "nkora nte kugira ngo nemeze ko ndi imfubyi",
+        "icyemezo cy'imfubyi gisaba iki"
+      ],
+      "answers": [
+        "Iyi serivisi ntiyishyurwa, imara umunsi 1 gutunganywa. Usabwa kugaragaza icyemezo cy'urupfu rw'umubyeyi cyangwa icyemezo cy'urukiko."
+      ]
+    },
+    {
+      "intent": "service.genocide.survivor",
+      "utterances": [
+        "icyemezo cy'uwarokotse jenoside",
+        "icyemezo cy'utishoboye warokotse jenoside",
+        "ndi umucikacumu wa jenoside",
+        "inkunga y'abacikacumu"
+      ],
+      "answers": [
+        "Iyi serivisi ntiyishyurwa, imara umunsi 1 gutunganywa. Igenewe abanditse nk'abatishoboye bacitse ku icumu rya Jenoside muri system ya MINUBUMWE. Icyemezo gikoreshwa mu gusaba inkunga ya MINUBUMWE."
+      ]
+    },
+    {
+      "intent": "service.disability",
+      "utterances": [
+        "serivisi z'abafite ubumuga",
+        "ibaruwa y'ubumuga",
+        "nkora nte kugira ngo mbone ibaruwa y'ubumuga",
+        "ubufasha ku bafite ubumuga"
+      ],
+      "answers": [
+        "Iyi serivisi ntiyishyurwa, imara iminsi 2 gutunganywa. Usabwa kugaragaza ikarita y'ubumuga ya NCPD. Iyi baruwa igufasha kubona serivisi zose no kuzamura imibereho yawe."
+      ]
+    },
+    {
+      "intent": "service.inheritance",
+      "utterances": [
+        "icyemezo cy'izungura",
+        "nkora nte kugira ngo mbone icyemezo cyo kuzungura",
+        "izungura risaba iki",
+        "izungura rimara igihe kingana iki"
+      ],
+      "answers": [
+        "Icyemezo cyo Kuzungura gitangirwa ku murenge uwitabye Imana yari atuyemo. Ntiyishyurwa, imara iminsi 3 gutunganywa. Ukeneye kugaragaza imyanzuru y'inama y'umuryango. Amafishi 7 na 29 (ku butaka) ushobora kuyasanga ku murenge."
+      ]
+    },
+    {
+      "intent": "service.marriage.certificate",
+      "utterances": [
+        "icyemezo cy'imibanire y'abashyingiranwe",
+        "icyemezo cyo gushyingirwa",
+        "nkora nte kugira ngo mbone icyemezo cy'uko nashyingiwe",
+        "icyemezo cy'ishyingirwa gisaba iki"
+      ],
+      "answers": [
+        "Icyemezo cy'imibanire y'abashyingiranwe gisaba 1,500 RWF, kimara umunsi 1 gutunganywa. Ukeneye kugaragaza: 1) Kopi ya Pasiporo (ku banyamahanga) 2) Kimwe mu byemezo bikurikira: Icyemezo cyo gushyingirwa, Inyandiko Mpine y'Ishyingirwa, cyangwa Inyandiko y'Ishyingirwa."
+      ]
+    },
+    {
+      "intent": "service.widowhood",
+      "utterances": [
+        "icyemezo cy'ubupfakazi",
+        "nkora nte kugira ngo mbone icyemezo cy'ubupfakazi",
+        "ubupfakazi busaba iki",
+        "icyemezo cy'ubupfakazi kirahenda"
+      ],
+      "answers": [
+        "Icyemezo cy'Ubupfakazi gisaba 1,500 RWF, kimara umunsi 1 gutunganywa. Gitangwa n'umurenge, kigaragaza irangamimerere y'uwasabye nyuma y'uko uwo bashakanye yitabye Imana."
+      ]
+    },
+    {
+      "intent": "service.birth",
+      "utterances": [
+        "inyandiko y'ivuka",
+        "icyemezo cy'amavuko",
+        "nkora nte kugira ngo mbone icyemezo cy'amavuko",
+        "icyemezo cy'amavuko gisaba iki"
+      ],
+      "answers": [
+        "Icyemezo cy'amavuko gisaba 500 RWF, kimara umunsi 1 gutunganywa. Gitangirwa ku murenge. Ushobora gusabwa kugaragaza: 1) Pasiporo ya Nyina 2) Pasiporo ya Se 3) Kopi ya pasiporo y'Umenyekanisha."
+      ]
+    },
+    {
+      "intent": "service.death.registration",
+      "utterances": [
+        "kwandukuza umuntu witabye imana",
+        "nkora nte kugira ngo nandukuze uwapfuye",
+        "kwandikisha urupfu",
+        "urupfu rwandikwa gute"
+      ],
+      "answers": [
+        "Kwandukuza umuntu witabye Imana ntibisaba amafaranga, bimara umunsi 1. Ukeneye: 1) Icyemezo cy'ibitaro cy'urupfu (niba yapfiriye mu bitaro) 2) Raporo y'Akagari 3) Kopi ya Pasiporo (ku banyamahanga) 4) Icyemezo cy'urukiko (niba hashize iminsi 15 urupfu rutarandikwa)."
       ]
     }
   ]
