@@ -1,0 +1,24 @@
+{
+  "name": "Kinyarwanda Corpus",
+  "locale": "rw-RW",
+  "data": [
+    {
+      "intent": "greetings.hello",
+      "utterances": ["mwaramutse", "muraho", "bite", "yego"],
+      "answers": ["Muraho! Murakaza neza!", "Mwaramutse! Murakaza neza!"]
+    },
+    {
+      "intent": "greetings.howareyou",
+      "utterances": ["amakuru", "umeze ute", "bite sha"],
+      "answers": ["Ni meza, murakoze!", "Meze neza, murakoze!"]
+    },
+    {
+      "intent": "greetings.bye",
+      "utterances": ["murabeho", "nagasaga", "muramuke"],
+      "answers": [
+        "Murabeho, mugarare amahoro!",
+        "Nagasaga, Imana ibahe umugisha!"
+      ]
+    }
+  ]
+}
