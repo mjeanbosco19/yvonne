@@ -26,6 +26,12 @@
     "@nlpjs/directline-connector": "^5.0.0-alpha.5",
     "@nlpjs/express-api-server": "^5.0.0-alpha.5",
     "express": "^4.21.2",
-    "node-nlp": "^5.0.0-alpha.5"
+    "node-nlp": "^5.0.0-alpha.5",
+    "express-rate-limit": "^6.7.0",
+    "express-validator": "^7.0.1",
+    "express-session": "^1.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
