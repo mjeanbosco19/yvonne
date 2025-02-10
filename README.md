@@ -78,33 +78,9 @@ The project can be deployed to various platforms:
    - Build Command: `npm install`
    - Start Command: `node index.js`
 
-### Railway
-
-1. Fork this repository
-2. Create a new project on Railway
-3. Connect your repository
-4. Railway will automatically detect the configuration
-
-### Heroku
-
-1. Create a new Heroku app
-2. Connect your repository
-3. Deploy using the Heroku CLI or GitHub integration
 
 ## Environment Variables
 
 - `PORT`: Server port (default: 3000)
 - `NODE_ENV`: Environment mode (development/production)
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-This project is licensed under the ISC License.
 
